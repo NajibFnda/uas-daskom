@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 100px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Web Blog</a>
+        <ul class="navbar-nav">
+          <li>
+            <a href="home.html">Home</a>
+        </li>
+        <li>
+            <a href="#">Profil</a>
+            <ul class="hov">
+              <li><a href="#">Profil</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Artikel</a>
+            <ul class="hov">
+                <li><a href="artikel.html">artikel</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">-</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Buku Tamu</a>
+            <ul class="hov">
+                <li><a href="form.html"> Tulis Komentar</a></li>
+                <li><a href="lapor.html">lapor</a></li>
+                <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+                <li><a href="bukutamu.html">Buku Tamu</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Gallery</a>
+            <ul class="hov">
+              <li><a href="#">Soekarno</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+    <div class="container">
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="pict/Presiden_Sukarno.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="pict/soekarno.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="pict/Soekarno_1959.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="pict/sukarno.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="pict/220px-Soekarno.jpg" alt="Image 5">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

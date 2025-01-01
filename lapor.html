@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Layanan Aspirasi dan Pengaduan Online Rakyat</title>
+<link rel="stylesheet" href="style.css">
+<style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f9;
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 40px 70px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      .btn:hover {
+        opacity: 0.8;
+        background-color: #dc3546e4;
+      }
+</style>
+</head>
+<body>
+        <!-- Nav -->
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">Web Blog</a>
+            <ul class="navbar-nav">
+              <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Profil</a>
+                <ul class="hov">
+                  <li><a href="#">Profil</a></li>
+                  <li><a href="#">-</a></li>
+                  <li><a href="#">-</a></li>
+                  <li><a href="#">-</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Artikel</a>
+                <ul class="hov">
+                    <li><a href="artikel.html">artikel</a></li>
+                    <li><a href="#">-</a></li>
+                    <li><a href="#">-</a></li>
+                    <li><a href="#">-</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Buku Tamu</a>
+                <ul class="hov">
+                  <li><a href="form.html"> Tulis Komentar</a></li>
+                  <li><a href="lapor.html">lapor</a></li>
+                  <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+                  <li><a href="bukutamu.html">Buku Tamu</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+                <ul class="hov">
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="#">-</a></li>
+                  <li><a href="#">-</a></li>
+                  <li><a href="#">-</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- Nav END -->
+
+
+          <div class="container">
+            <h1>Sampaikan Laporan Anda</h1>
+            <form action="#" method="POST" class="message-form">
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Ketik Nama Anda"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Judul Laporan</label>
+                <input
+                  type="text"
+                  id="judul"
+                  name="judul"
+                  placeholder="Ketik Judul Laporan Anda"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="pesan">Isi Laporan</label>
+                <textarea
+                  id="pesan"
+                  name="pesan"
+                  rows="5"
+                  placeholder="Ketik Isi Laporan Anda"
+                  required
+                ></textarea>
+              </div>
+    <button class="btn">Kirim Laporan</button>
+  </div>
+</div>
+</body>
+</html>

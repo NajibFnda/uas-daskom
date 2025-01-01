@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 100px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .guestbook-entries {
+            margin-top: 30px;
+        }
+
+        .entry {
+            display: flex;
+            align-items: flex-start;
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .pp{
+            margin-right: 15px;
+        }
+
+        .entry h3 {
+            margin: 0 0 5px;
+            color: #333;
+        }
+
+        .entry p {
+            margin: 0;
+            color: #555;
+        }
+
+        .entry .timestamp {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand"></a>
+        <ul class="navbar-nav">
+          <li>
+            <a href="home.html">Home</a>
+        </li>
+        <li>
+            <a href="#">Profil</a>
+            <ul class="hov">
+              <li><a href="#">Profil</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Artikel</a>
+            <ul class="hov">
+                <li><a href="artikel.html">artikel</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">-</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Buku Tamu</a>
+            <ul class="hov">
+                <li><a href="form.html"> Tulis Komentar</a></li>
+                <li><a href="lapor.html">lapor</a></li>
+                <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+                <li><a href="bukutamu.html">Buku Tamu</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Gallery</a>
+            <ul class="hov">
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+              <li><a href="#">-</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Nav END -->
+
+
+    <div class="container">
+        <h1>Buku Tamu</h1>
+        <div class="guestbook-entries" id="guestbook-entries">
+            <div class="entry">
+                <div class="profile-picture"></div>
+                <img src="pict/foto-profil.jpg" alt="foto profil" width="50px" height="50px" class="pp"/>
+                <div>
+                    <h3>Ucup</h3>
+                    <p>Situs ini sangat membantu, terima kasih!</p>
+                    <div class="timestamp">Diposting pada: 2024-12-23 10:00</div>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="profile-picture"></div>
+                <img src="pict/foto-profil.jpg" alt="foto profil" width="50px" height="50px" class="pp"/>
+                <div>
+                    <h3>Asep</h3>
+                    <p>Desain yang indah dan mudah digunakan!</p>
+                    <div class="timestamp">Diposting pada: 2024-12-23 10:05</div>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="profile-picture"></div>
+                <img src="pict/foto-profil.jpg" alt="foto profil" width="50px" height="50px" class="pp"/>
+                <div>
+                    <h3>Yudi</h3>
+                    <p>Terima kasih telah menyediakan informasi yang bermanfaat.</p>
+                    <div class="timestamp">Diposting pada: 2024-12-23 10:10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

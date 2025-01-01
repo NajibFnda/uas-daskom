@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type='text/css'>
+        /*CSS MENU*/
+        #menu{background:blue;color:#eee;height:35px;border-bottom:4px solid #eeeded}
+        #menu ul,#menu li{margin:0 0;padding:0 0;list-style:none;z-index:9999;}
+        #menu ul{height:35px}
+        #menu li{float:left;display:inline;position:relative;font:bold 12px Arial;text-shadow: 0 -1px 0 #000;border-right: 1px solid #444;border-left: 1px solid #111;text-transform:uppercase}
+        #menu li:first-child{border-left: none}
+        #menu a{display:block;line-height:35px;padding:0 14px;text-decoration:none;color:#eee;}
+        /* #menu li:hover &gt; a,#menu li a:hover{background:#111} */
+        #menu li:hover &gt; a,#menu li a:hover{background:blue} 
+        #menu input{display:none;margin:0 0;padding:0 0;width:80px;height:35px;opacity:0;cursor:pointer}
+        #menu label{font:bold 30px Arial;display:none;width:35px;height:36px;line-height:36px;text-align:center}
+        #menu label span{font-size:12px;position:absolute;left:35px}
+        #menu ul.menus{height:auto;overflow:hidden;width:180px;background:blue;position:absolute;z-index:99;display:none;border:0;}
+        #menu ul.menus li{display:block;width:100%;font:12px Arial;text-transform:none;}
+        #menu li:hover ul.menus{display:block}
+        #menu a.home {background: #c00;}
+        #menu a.sub{padding:0 27px 0 14px}
+        #menu a.sub::after{content:&quot;&quot;;width:0;height:0;border-width:6px 5px;border-style:solid;border-color:#eee transparent transparent transparent;position:absolute;top:15px;right:9px}
+        #menu ul.menus a:hover{background:blue;}
+        </style>
+</head>
+<body>
+     <!-- Star header -->
+     <img src="awan.jpg" width="100%">
+     <center>
+         <h1>Web Blog Ku</h1>
+    <!-- Mulai Area Menu -->
+<nav id='menu'>
+    <input type='checkbox'/>
+    <label>=Navigation</label>
+    <ul>
+    <li><a class='home' href='/'>Home</a></li>
+    
+    <!-- Mulai Area Menu Dropdown -->
+    
+    <li><a class='sub' href='#'>Profil</a> 
+    <ul class='menus'>
+    <li><a href='latih1.html' title='Menus'>Profilku 2024</a></li>
+    <li><a href='#'>Kamar 2</a></li>
+    <li><a href='#'>Kamar 3</a></li>
+    <li><a href='#'>Kamar 4</a></li>
+    
+    </ul>
+    </li>
+    
+    <li><a class='sub' href='#'>Artikel</a> 
+    <ul class='menus'>
+    <li><a href='artikel.html' title='Menus2'>Kamar 7</a></li>
+    <li><a href='#'>kamar 8</a></li>
+    <li><a href='#'>Kamar 9</a></li>
+    <li><a href='#'>Kamar 10</a></li>
+    </ul>
+
+        <li><a class='sub' href='#'>Buku Tamu</a> 
+        <ul class='menus'>
+        <li><a href='bukutamu.html' title='Menus2'>Kamar 7</a></li>
+        <li><a href='#'>kamar 8</a></li>
+        <li><a href='#'>Kamar 9</a></li>
+        <li><a href='#'>Kamar 10</a></li>
+        </ul>
+    </li>
+    <li><a class='sub' href='#'>Galery</a> 
+        <ul class='menus'>
+        <li><a href='gallery.html' title='Menus2'>Kamar 7</a></li>
+        <li><a href='#'>kamar 8</a></li>
+        <li><a href='#'>Kamar 9</a></li>
+        <li><a href='#'>Kamar 10</a></li>
+        </ul>
+    </li>
+    <!-- Area Dropdown Selesai-->
+     </ul>
+    </nav>
+    <!-- Area Menu Selesai-->
+    
+</body>
+</html>
