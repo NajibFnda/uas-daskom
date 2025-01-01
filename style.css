@@ -51,6 +51,66 @@ body {
   color: rgb(150, 150, 150);
 }
 
+/* Responsive Styles
+#menu-toggle {
+  display: none;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styles for small screens */
+/* @media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  #menu-toggle:checked + .navbar-toggle + .navbar-nav {
+    display: flex;
+  }
+
+  .navbar-nav li {
+    border-bottom: 1px solid rgb(230, 230, 230);
+  }
+
+  .navbar-nav a {
+    padding: 15px;
+  }
+
+  .hov {
+    display: none;
+    position: absolute;
+    box-shadow: none;
+  }
+
+  .navbar-nav li:hover .hov {
+    display: none; 
+}
+
+  .navbar-nav li > a:focus + .hov, 
+  .navbar-nav li > a:active + .hov {
+    display: block;
+  }
+
+  .navbar-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+  }
+} */ 
+
 /* dropdown*/
 .hov {
   display: none;
